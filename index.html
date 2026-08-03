@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Special Invitation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Opening Screen -->
+<section id="loading" class="page active">
+    <h1>You've received something special...</h1>
+    <div class="loader">✨ Preparing your invitation ✨</div>
+</section>
+
+
+<!-- Envelope -->
+<section id="envelopePage" class="page">
+
+    <h1>A delivery for Kuzanga 💌</h1>
+
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="letter">
+            <h2>Hey Dumbhead ❤️</h2>
+            <p>
+            Before you make any plans, I have something I'd like to ask you.
+            </p>
+        </div>
+    </div>
+
+    <button onclick="openEnvelope()">
+        📩 Open Invitation
+    </button>
+
+</section>
+
+
+<!-- Letter -->
+<section id="letterPage" class="page">
+
+    <h1>Hey Dumbhead ❤️</h1>
+
+    <p>
+    Life gets busy, and sometimes we forget to create moments that become memories.
+    </p>
+
+    <br>
+
+    <p>
+    So instead of sending a simple text, I wanted to ask you in a way that is a little more special.
+    </p>
+
+    <br>
+
+    <p>
+    I would really like to take you out for a movie...
+    </p>
+
+    <button onclick="showMovies()">
+        Choose Our Movie 🎬
+    </button>
+
+</section>
+
+
+<!-- Movie Selection -->
+<section id="moviePage" class="page">
+
+<h1>Choose Our Movie 🍿</h1>
+
+<div class="movies">
+
+<div class="movie-card" onclick="chooseMovie('spiderman')">
+
+<img src="https://image.tmdb.org/t/p/w500/placeholder.jpg">
+
+<h3>Spider-Man: Brand New Day</h3>
+
+</div>
+
+
+<div class="movie-card" onclick="chooseMovie('odyssey')">
+
+<img src="https://image.tmdb.org/t/p/w500/placeholder.jpg">
+
+<h3>The Odyssey</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Ticket -->
+<section id="ticketPage" class="page">
+
+<h1>Your Movie Ticket 🎟️</h1>
+
+<div class="ticket">
+
+<h2 id="movieTitle"></h2>
+
+<div class="details">
+
+<p>📍 <span id="cinema"></span></p>
+
+<p>📅 <span id="date"></span></p>
+
+<p>🕒 <span id="time"></span></p>
+
+<p>🚗 Pickup: <span id="pickup"></span></p>
+
+</div>
+
+</div>
+
+
+<button onclick="finalQuestion()">
+Continue ❤️
+</button>
+
+</section>
+
+
+<!-- Final Question -->
+<section id="finalPage" class="page">
+
+<h1>One last question...</h1>
+
+<p>
+Every good movie deserves good company.
+</p>
+
+<h2>
+Will you be my movie date? ❤️
+</h2>
+
+
+<button onclick="yesAnswer()">
+Absolutely ❤️
+</button>
+
+
+</section>
+
+
+<!-- Success -->
+<section id="successPage" class="page">
+
+<h1>🎉 Date Confirmed!</h1>
+
+<p>
+See you soon, Dumbhead ❤️
+</p>
+
+<p>
+— Rejoice
+</p>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
